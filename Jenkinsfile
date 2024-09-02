@@ -30,13 +30,6 @@ pipeline {
                 }
             }
         }
-        stage('Deploy') {
-            steps {
-                script {
-                    // Helm deploy step (assuming Helm is set up correctly)
-                    sh 'helm upgrade --install my-app ./helm/my-app'
-                }
-            }
-        }
+        
     }
 }
